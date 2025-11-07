@@ -4,6 +4,8 @@ reportextension 50101 SalesTaxInvoiceExt extends "Standard Sales - Invoice"
     {
         add(Line)
         {
+            column(PaymentTermsCode;Header."Payment Terms Code")
+            {}
             column(LocationCode;Line."Location Code")
             {}
             column(CurrencyCodeV2;GetCurrencyCode())
